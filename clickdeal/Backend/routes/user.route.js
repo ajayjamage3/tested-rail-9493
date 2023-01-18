@@ -33,7 +33,7 @@ userRouter.post("/register",async(req,res)=>{
             }
         })
     } catch (error) {
-        console.log(error)
+        res.send(error)
     }
 })
 
@@ -57,7 +57,7 @@ userRouter.post("/login",async(req,res)=>{
             res.send("Wrong Username")
        }
     } catch (error) {
-        console.log(error)
+        res.send(error)
     }
 })
 
