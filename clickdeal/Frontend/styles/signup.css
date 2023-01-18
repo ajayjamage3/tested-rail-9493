@@ -1,0 +1,82 @@
+body {
+    background-color: #f7f7f7;
+    font-family: "Lato", sans-serif;
+  }
+  #container {
+    width: 30%;
+    text-align: center;
+    border: 1px solid transparent;
+    margin: auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  h3 {
+    text-align: center;
+    font-size: 20px;
+  }
+  h5 {
+    color: #808080;
+    margin-top: 0px;
+    text-align: center;
+  }
+  p {
+    font-size: 12px;
+    color: gray;
+  }
+  
+  form > input {
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #808080;
+    outline: none;
+  }
+  form select{
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #808080;
+    outline: none;
+  }
+  form > input:placeholder-shown {
+    padding-left: 10px;
+  }
+  button {
+    width: 250px;
+    height: 40px;
+    margin: 28px;
+    background-color: #e40046;
+    color: white;
+    border: 1px solid transparent;
+  cursor: pointer;
+  }
+  
+  #form p {
+    font-size: 15px;
+    color: red;
+    text-transform: capitalize;
+    padding-top: 0px;
+    height: 2px;
+  }
+  .icons {
+    font-size: 38px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .icons img {
+    width: 12%;
+  }
+  
+  .fa-facebook {
+    color: #3B5998;
+    padding-top: 5px;
+    padding-right: 10px;
+  }
+  form{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 15px;
+    width: 50%;
+    margin: auto;
+  }
+  
