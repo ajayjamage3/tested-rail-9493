@@ -390,7 +390,7 @@
   }
   
   .moreitems2:hover .signsub {
-    width: 129%;
+    width: fit-content;
     position: absolute;
     height: 400%;
     margin-top: 21px;
@@ -576,7 +576,7 @@ header{
 }
 
 .barcode {
-  display: none;
+  display: flex;
   justify-content: center;
   width: 180%;
   margin-left: 45px;
@@ -613,4 +613,14 @@ header{
 }
 .product:hover{
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#logout{
+  background-color: #e40046;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 6px 30px 8px 30px;
+  margin:55px;
+  cursor: pointer;
+  display: none;
+  margin-top: 5%;
 }

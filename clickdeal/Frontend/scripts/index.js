@@ -1,10 +1,6 @@
-import { dropmenu, navbar} from "./navbar.js"
 import{footer} from "./footer.js"
-// document.querySelector("#head").innerHTML = navbar()
-// document.querySelector(".leftside").innerHTML = dropmenu()
+
 document.querySelector(".footer1").innerHTML = footer()
-
-
 let sliders = document.querySelectorAll(".slides");
 let prevBtn = document.querySelector(".prevBtn");
 let nextBtn = document.querySelector(".nextBtn");
@@ -44,29 +40,13 @@ function carousel() {
 
 document.querySelector(".prev").addEventListener("click",()=>{
     let ele = document.querySelector(".trending")
-    ele.scrollLeft-=200
+    ele.scrollLeft+=200
 })
 document.querySelector(".next").addEventListener("click",()=>{
     let ele = document.querySelector(".trending")
-    ele.scrollLeft+=200
+    ele.scrollLeft-=200
 })
 
-// document.querySelector(".menubar").addEventListener("mouseover",()=>{
-//     document.querySelector(".leftside").style.display = "block"
-//     document.querySelector(".menubar").style.backgroundColor = "white"
-//     document.querySelector(".bar1").style.backgroundColor = "#e40046"
-//     document.querySelector(".bar2").style.backgroundColor = "#e40046"
-//     document.querySelector(".bar3").style.backgroundColor = "#e40046"
-
-// })
-// document.querySelector(".menubar").addEventListener("mouseout",()=>{
-//     document.querySelector(".leftside").style.display = "none"
-//     document.querySelector(".menubar").style.backgroundColor = "#e40046"
-//     document.querySelector(".bar1").style.backgroundColor = "white"
-//     document.querySelector(".bar2").style.backgroundColor = "white"
-//     document.querySelector(".bar3").style.backgroundColor = "white"
-
-// })
 
 window.addEventListener("load",()=>{
     fetch(`https://prussian-blue-butterfly-wig.cyclic.app/render/show?category=fashion`)
@@ -85,5 +65,28 @@ function display(data){
         `
     })
     document.querySelector(".trending").innerHTML = newData.join(" ")
+    let all_products = document.querySelectorAll(".product")
+    for(let product of all_products){
+        product.addEventListener("click",()=>{
+            sessionStorage.setItem("productId",product.dataset.id)
+            window.location = "details.html"
+        })
+    }
 }
 
+let token = sessionStorage.getItem("token")
+if(token){
+    document.querySelector("#user_name").innerHTML = sessionStorage.getItem("username")
+    document.querySelector("#login").style.display = "none"
+    document.querySelector("#logout").style.display = "block"
+}
+
+document.querySelector("#logout").addEventListener("click",()=>{
+    sessionStorage.clear()
+    document.querySelector("#login").style.display = "block"
+    document.querySelector("#logout").style.display = "none"
+    window.location.reload()
+})
+document.querySelector(".logoimg").addEventListener("click",()=>{
+    window.location = "index.html"
+})

@@ -1,5 +1,6 @@
 export const footer = ()=>{
-    return `<div class="footCard">
+    return `
+    <div class="footCard">
     <div class="footitems">
         <h3>Policy Info</h3>
         <p>Privacy Policy</p>

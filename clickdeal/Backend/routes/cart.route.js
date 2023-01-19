@@ -7,28 +7,27 @@ const bcrypt = require("bcrypt")
 const cartRouter = express.Router()
 
 cartRouter.get("/",async(req,res)=>{
-    console.log(query)
-   res.send(await CartModel.find())
+   res.send(await CartModel.find(req.query))
 })
 
 cartRouter.post("/create",async(req,res)=>{
     try {
        const posts = new CartModel(req.body)
        await posts.save()
-       res.send("Added to cart")
+       res.send({"status":"Added to cart"})
     } catch (error) {
         console.log(error)
-        res.send("something went wrong")
+        res.send({"status":"something went wrong"})
     }
 })
 
 cartRouter.delete("/delete/:id",async(req,res)=>{
     try {
         await CartModel.findByIdAndDelete({_id:req.params.id})
-        res.send("Deleted from cart")
+        res.send({"status":"Deleted from cart"})
     } catch (error) {
         console.log(error)
-        res.send("something went wrong")
+        res.send({"status":"something went wrong"})
     }
 })
 
