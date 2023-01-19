@@ -10,11 +10,11 @@ const authenticate = (req,res,next)=>{
             next()
         }
         else{
-            res.send("Please login")
+            res.send({"status":"Please login"})
         }
     }
     else{
-        res.send("Please login")
+        res.send({"status":"Please login"})
     }
 }
 module.exports = {

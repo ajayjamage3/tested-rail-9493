@@ -31,7 +31,7 @@ export const navbar =()=>{
     </div>
     <div class="moreitemslist">
         <div class="moreitems1">
-            <a href="">Cart <i class="fas fa-shopping-cart"></i></a>
+            <a href="cart.html">Cart <i class="fas fa-shopping-cart"></i></a>
         </div>
         <div class="moreitems2">
             <a href="" id="user_name">Sign In <i class="fas fa-user-circle"></i></a>
@@ -52,6 +52,7 @@ export const navbar =()=>{
                     <h3>Register</h3>
                 </a>
                 <a href="signin.html" id="login">Login</a>
+                <a  id="logout">Logout</a>
             </div>
         </div>
     </div>
@@ -147,7 +148,7 @@ export const dropmenu =()=>{
             <!-- 1st row -->
             <div>
               <h4>MOBILE PHONES</h4>
-              <a href="product.html"> <p>PowerBanks</p></a>
+              <a> <p>PowerBanks</p></a>
               <p>Feature Phones</p>
 
               <hr />

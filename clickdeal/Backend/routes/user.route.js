@@ -5,7 +5,7 @@ const {UserModel} = require("../models/user.model")
 const jwt = require("jsonwebtoken")
 const bcrypt = require("bcrypt")
 const userRouter = express.Router()
-
+require("dotenv").config()
 userRouter.get("/",async(req,res)=>{
     const query = req.query
     console.log(query)
@@ -14,10 +14,10 @@ userRouter.get("/",async(req,res)=>{
 userRouter.patch("/address/:id",async(req,res)=>{
     try {
         await UserModel.findByIdAndUpdate({_id:req.params.id},req.body)
-        res.send("address added")
+        res.send({"status":"Address added"})
     } catch (error) {
         console.log(error)
-        res.send("something went wrong")
+        res.send({"status":"something went wrong"})
     }
 })
 userRouter.post("/register",async(req,res)=>{
@@ -29,7 +29,7 @@ userRouter.post("/register",async(req,res)=>{
             }else{
                 const user = new UserModel({name,email,password:sec_pass,gender,phone,age})
                 await user.save()
-                res.send("User registered succesully")
+                res.send({"status":"user registered succesfully"})
             }
         })
     } catch (error) {
@@ -45,16 +45,16 @@ userRouter.post("/login",async(req,res)=>{
         const hashed_pass = user[0].password
         bcrypt.compare(password,hashed_pass,(err,result)=>{
             if(result){
-                const token = jwt.sign({userId:user[0]._id},"social")
+                const token = jwt.sign({userId:user[0]._id},process.env.key)
                 res.send({"msg":"login succesfull","token":token,"userId":user})
             }
             else{
-                res.send("Wrong Password")
+                res.send({"status":"wrong password"})
             }
         })
        }
        else{
-            res.send("Wrong Username")
+            res.send({"status":"wrong username"})
        }
     } catch (error) {
         res.send(error)

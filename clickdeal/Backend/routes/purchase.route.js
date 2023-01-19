@@ -15,10 +15,10 @@ purchaseRouter.post("/create",async(req,res)=>{
     try {
        const posts = new PurchaseModel(req.body)
        await posts.save()
-       res.send("Added to cart")
+       res.send({"status":"product purchased"})
     } catch (error) {
         console.log(error)
-        res.send("something went wrong")
+        res.send({"status":"something went wrong"})
     }
 })
 

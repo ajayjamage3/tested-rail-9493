@@ -15,34 +15,31 @@ productRouter.get("/",async(req,res)=>{
 productRouter.post("/create",async(req,res)=>{
     try {
         let data = req.body
-        data.forEach(async(element)=> {
-            const posts = new ProductModel(element)
+            const posts = new ProductModel(data)
             await posts.save()
-        });
-       
-       res.send("Posted Done")
+            res.send({"status":"Posted"})
     } catch (error) {
         console.log(error)
-        res.send("something went wrong")
+        res.send({"status":"something went wrong"})
     }
 })
 
 productRouter.patch("/update/:id",async(req,res)=>{
     try {
         await ProductModel.findByIdAndUpdate({_id:req.params.id},req.body)
-        res.send("Updated")
+        res.send({"status":"Updated"})
     } catch (error) {
         console.log(error)
-        res.send("something went wrong")
+        res.send({"status":"something went wrong"})
     }
 })
 productRouter.delete("/delete/:id",async(req,res)=>{
     try {
         await ProductModel.findByIdAndDelete({_id:req.params.id})
-        res.send("Deleted")
+        res.send({"status":"Deleted"})
     } catch (error) {
         console.log(error)
-        res.send("something went wrong")
+        res.send({"status":"something went wrong"})
     }
 })
 
