@@ -78,16 +78,16 @@ export const dropmenu =()=>{
               <h4>AUTUMN/WINTER SPECIAL</h4>
               <p>Air Purifiers Geysers Socks</p>
               <p>Geysers</p>
-              <p>Socks</p>
+              <p>Bronzer</p>
               <p>Air Fresheners</p>
               <p>Blankets & Comforters</p>
               <p>Coffee & Tea Makers</p>
-              <p>Hair Dryers</p>
+              <p>lipstic</p>
               <p>Air Conditioners</p>
               <hr />
               <h4>AUTUMN/WINTER SPECIAL</h4>
               <p>Air Purifiers Geysers Socks</p>
-              <p>Geysers</p>
+              <p>Blush</p>
               <p>Socks</p>
               <p>Air Fresheners</p>
             </div>
@@ -95,17 +95,17 @@ export const dropmenu =()=>{
             <div>
               <h4>AUTUMN/WINTER SPECIAL</h4>
               <p>Air Purifiers Geysers Socks</p>
-              <p>Geysers</p>
+              <p>fashion</p>
               <p>Socks</p>
               <hr />
               <h4>AUTUMN/WINTER SPECIAL</h4>
               <p>Air Purifiers Geysers Socks</p>
-              <p>Geysers</p>
+              <p>powerbank</p>
               <p>Socks</p>
               <p>Air Fresheners</p>
               <p>Blankets & Comforters</p>
-              <p>Coffee & Tea Makers</p>
-              <p>Hair Dryers</p>
+              <p>Mens Cloths</p>
+              <p>Womens Cloths</p>
             </div>
             <!-- 3rd row -->
             <div>

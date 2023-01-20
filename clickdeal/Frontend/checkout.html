@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/checkout.css" />
+</head>
+
+<body>
+    <div id="payment-protection">
+        <div class="logoimg">
+            <img src="./scripts/clickdeal.png" alt="">
+            <h3>clickdeal</h3>
+        </div>
+        <div>
+            <p>100% Payment Protection, Easy Returns Policy</p>
+        </div>
+    </div>
+    
+    <div id="container">
+        <div id="sec1">
+            <div id="login">
+                <div id="logs">
+                    <i class="fa fa-check-circle"></i>
+                    <p>1. LOGIN</p>
+                </div>
+                <p id="user"></p>
+            </div>
+            <div id="address">
+                <div id="address2">
+                    <i class="fa fa-check-circle"></i>
+                    <p>2. Delivery Address</p>
+                </div>
+                <p id="useradd"></p>
+            </div>
+            <div id="review">
+                <div id="rev">
+                    <p id="rev2">3. Review Order</p>
+                </div>
+                <div id="cart_body">
+                    <table>
+                        <thead>
+                            <th>Item Details</th>
+                            <th>price</th>
+                            <th>Quantity</th>
+                            <th>Showing Availability</th>
+                            <th>Subtotal</th>
+                        </thead>
+                        <tbody id="cart_body2">
+    
+                        </tbody>
+                    </table>
+                </div>
+                <div id="bill">
+                    <div id="subtotal">
+                        <p>Subtotal:</p>
+                        <p id="total">0</p>
+                        <p>Delivery charges:</p>
+                        <p id="green">Free</p>
+                    </div>
+                    <div>
+                        <button id="pay">PROCEED TO PAYMENT RS: <span id="tot"></span></button>
+                    </div>
+                </div>
+            </div>
+            <div id="payment">
+                <div id="makepay">
+                    <p id="pay2">4. MAKE PAYMENT</p>
+                </div>
+                <div id="methodDiv">
+                    <div id="method">
+                        <p id="credit">Credit Card</p>
+                        <p id="debit">Debit Card</p>
+                        <p id="cod">Cash on Delivery</p>
+                    </div>
+                    <div id="details">
+                        <p>Pay using Credit Card</p><hr>
+                            <label for="">Card Number</label>
+                            <input type="number" placeholder="Card Number" id="cardnum"> <br> <br> <hr>
+                            <label for="">Expiry Date</label>
+                            <input type="date" id="expdate">
+                            <label for="">CVV</label> 
+                            <input type="number" placeholder="CVV" id="cvv"> <br><br>
+                            <input type="submit" value="" id="paybutton">
+                        <p>This card will be saved for a faster payment experience</p>
+                        <p> TrustPay: 100% Payment Protection, Easy Returns Policy</p>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <div id="sec2">
+            <p>SUMMARY (<span id="topro"></span> Items)</p>
+            <hr>
+            <div id="sumproducts">
+
+            </div>
+            <p>Total: <span id="subtot"></span></p>
+            <h3>You Pay Rs. <span id="youpay"></span></h3>
+            <p>Delivery: <span style="color: green;">Free</span></p>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./scripts/checkout.js"></script>
