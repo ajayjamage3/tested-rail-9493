@@ -15,6 +15,7 @@
   table{
     width: 100%;
     background-color: white;
+    margin-bottom: 8%;
   }
   thead{
     text-align: center;
@@ -47,4 +48,34 @@
   .remove{
     color: gray;
   }
-  
+  #bill{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3%;
+    background-color: rgb(34,34,34);
+    width: 99%;
+    margin: auto;
+    border-radius: 10px;
+  }
+  #subtotal{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 100px;
+    row-gap: 15px;
+    color: white;
+  }
+  #green{
+    color: green;
+  }
+  #pay{
+    background-color:rgb(228,0,70);
+    color: white;
+    padding: 10%;
+    width: 180%;
+    border: none;
+    border-radius: 10px;
+  }
+  #pay:hover{
+    background-color: #b30036;
+  }

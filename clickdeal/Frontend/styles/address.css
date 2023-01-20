@@ -1,0 +1,54 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: whitesmoke;
+  }
+  
+  #payment-protection {
+    background-color: #e40046;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 100px;
+  }
+  .logoimg{
+    margin-top: 15px;
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: center;
+  }
+  .logoimg h3{
+    color: white;
+  }
+  .logoimg img{
+   width: 40px;
+  }
+  #payment-protection  p {
+    padding-top: 24px;
+    color: white;
+    text-align: center;
+    align-items: center;
+  }
+  #addform{
+    background-color: white;
+    width: 40%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 20px;
+    margin-top: 3%;
+    border-radius: 10px;
+  }
+  input{
+    width: 200px;
+    margin: auto;
+    padding: 5px;
+  }
+  #proceed{
+    background-color: #e40046;
+    border: none;
+    padding: 10px;
+    color: white;
+    width: 150px;
+    border-radius: 5px;
+  }

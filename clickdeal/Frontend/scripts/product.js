@@ -1,5 +1,7 @@
 import { dropmenu, navbar} from "./navbar.js"
 import{footer} from "./footer.js"
+let category = sessionStorage.getItem("category")
+console.log(category)
 let products = []
 document.querySelector("#head").innerHTML = navbar()
 document.querySelector(".leftside").innerHTML = dropmenu()
@@ -23,12 +25,23 @@ document.querySelector(".menubar").addEventListener("mouseout",()=>{
 })
 
 window.addEventListener("load",()=>{
-    fetch(`https://prussian-blue-butterfly-wig.cyclic.app/render/show`)
-    .then(res=>res.json())
-    .then(data=>{
-        products = data
-        display(data)
-    })
+    if(category =="Blush" || category == "Bronzer" || category == "fashion" || category == "lipstic" || category =="powerbank"){
+        fetch(`https://prussian-blue-butterfly-wig.cyclic.app/render/show?category=${category}`)
+        .then(res=>res.json())
+        .then(data=>{
+            products = data
+            display(data)
+        })
+    }
+    else{
+        fetch(`https://prussian-blue-butterfly-wig.cyclic.app/render/show`)
+        .then(res=>res.json())
+        .then(data=>{
+            products = data
+            display(data)
+        })
+    }
+   
 })
 function display(data){
     let newData =  data.map(item=>{
@@ -61,7 +74,7 @@ document.querySelector("#logout").addEventListener("click",()=>{
     sessionStorage.clear()
     document.querySelector("#login").style.display = "block"
     document.querySelector("#logout").style.display = "none"
-    window.location.reload()
+    window.location="index.html"
 })
 
 document.querySelector("#range").addEventListener("change",()=>{
@@ -100,3 +113,10 @@ document.querySelector("#go").addEventListener("click",()=>{
 document.querySelector(".logoimg").addEventListener("click",()=>{
     window.location = "index.html"
 })
+let all = document.querySelectorAll("p")
+for(let cat of all){
+    cat.addEventListener("click",()=>{
+        sessionStorage.setItem("category",cat.innerText)
+        window.location = "product.html"
+    })
+}

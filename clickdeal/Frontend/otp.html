@@ -66,33 +66,30 @@
   </body>
 </html>
 
-<script>
-    document.querySelector("#button").addEventListener("click", OTP)
-    window.onload = function(){ 
-                alert("your otp is 1234");
-                }
-    function OTP(){
+<script>  
+    window.addEventListener("load",()=>{
+      alert("1234 is your otp")
+    })
+    document.querySelector("#button").addEventListener("click",()=>{
 
-        var input = document.querySelector("#OTP").value;
-
-    if (input == "1234") {
-      registerUser()
-      alert("Account Created SuccessFull, Please login");
-      window.location = "signin.html"
-    } else {
-      alert("Wrong OTP");
-    }
-  }
-
-function registerUser(){
-    let  user = sessionStorage.getItem("userInfo")
-    console.log(user)
-    fetch(`https://prussian-blue-butterfly-wig.cyclic.app/user/register`,{
-        method:"POST",
-        body:(user),
-        headers:{
-            "Content-type":"application/json"
+      let input = document.querySelector("#OTP").value;
+        if (input == "1234") {
+          let  user = sessionStorage.getItem("userInfo")
+          fetch(`https://prussian-blue-butterfly-wig.cyclic.app/user/register`,{
+            method:"POST",
+            body:user,
+            headers:{
+                "Content-type":"application/json"
+            }
+        }).then(res=>res.json())
+        .then(data=>alert("Account Created SuccessFull, Please login"))
+        .catch(err=>alert("something went"))
+          window.location = "signin.html"
+        } 
+        else {
+          alert("Wrong OTP");
         }
     })
-}
+      
+
 </script>

@@ -265,6 +265,7 @@
     margin-left: 24px;
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
   .logoimg h3{
     color: white;
@@ -438,6 +439,7 @@ header{
   margin-bottom: 12px;
   position: relative;
   height: 36px;
+  cursor: pointer;
 }
 .leftside li:hover {
   border-left: 3px solid red;
@@ -610,6 +612,7 @@ header{
 .product{
   padding: 20px;
   text-align: center;
+  cursor: pointer;
 }
 .product:hover{
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
