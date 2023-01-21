@@ -144,3 +144,26 @@ function check(data){
     }
 }
             
+document.querySelector("#account").addEventListener("click",()=>{
+    if(token){
+        window.location = "userinfo.html"
+    }
+    else{
+        alert("please login")
+    }
+})
+document.querySelector("#orders").addEventListener("click",()=>{
+    if(token){
+        window.location = "userinfo.html"
+    }
+    else{
+        alert("please login")
+    }
+})
+let all = document.querySelectorAll("p")
+for(let cat of all){
+    cat.addEventListener("click",()=>{
+        sessionStorage.setItem("category",cat.innerText)
+        window.location = "product.html"
+    })
+}

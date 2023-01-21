@@ -4,11 +4,11 @@ app.use(express.json())
 const {PurchaseModel} = require("../models/purchase.model")
 const jwt = require("jsonwebtoken")
 const bcrypt = require("bcrypt")
+const { query } = require("express")
 const purchaseRouter = express.Router()
 
 purchaseRouter.get("/",async(req,res)=>{
-    console.log(query)
-   res.send(await PurchaseModel.find())
+   res.send(await PurchaseModel.find(req.query))
 })
 
 purchaseRouter.post("/create",async(req,res)=>{
