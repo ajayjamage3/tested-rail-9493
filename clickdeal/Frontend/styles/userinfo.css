@@ -1,0 +1,77 @@
+#container{
+    width: 85%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+}
+#subcontainer{
+    width: 99%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#accounts{
+    border-right: 1px solid gray;
+    padding-right: 20px;
+}
+hr{
+    border:0.1px solid gray;
+}
+i{
+    margin-right: 5px;
+}
+#subcontainer2{
+    width: 70%;
+    padding: 10px;
+}
+#detail1{
+    padding: 10px;
+    display: none;
+    
+}
+#detail2{
+    padding: 10px;
+    display: none;
+}#detail3{
+    padding: 10px;
+    display: none;
+}
+#myaccount{
+    color: red;
+}
+.fa-user-circle{
+    color:black;
+}
+#username{
+    text-align: center;
+}
+#od{
+    height: 300px;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.carts{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+.carts img{
+    width: 60%;
+}
+#adedit{
+    padding: 3px 15px 3px 15px;
+}
+#logout{
+    background-color: #e40046;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 6px 30px 8px 30px;
+    margin: 55px;
+    cursor: pointer;
+    display: none;
+    margin-top: 5%;
+  }

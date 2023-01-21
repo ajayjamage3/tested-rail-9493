@@ -182,3 +182,19 @@ document.querySelector("#youpay").innerText = document.querySelector("#tot").inn
 document.querySelector(".logoimg").addEventListener("click",()=>{
     window.location = "index.html"
 })
+document.querySelector("#account").addEventListener("click",()=>{
+    if(token){
+        window.location = "userinfo.html"
+    }
+    else{
+        alert("please login")
+    }
+})
+document.querySelector("#orders").addEventListener("click",()=>{
+    if(token){
+        window.location = "userinfo.html"
+    }
+    else{
+        alert("please login")
+    }
+})

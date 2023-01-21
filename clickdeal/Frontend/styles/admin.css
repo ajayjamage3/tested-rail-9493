@@ -1,0 +1,125 @@
+#payment-protection {
+    background-color: #e40046;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 100px;
+  }
+  .logoimg{
+    margin-top: 15px;
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .logoimg h3{
+    color: white;
+  }
+  .logoimg img{
+   width: 40px;
+  }
+  #payment-protection  h3 {
+    padding-top: 24px;
+    color: white;
+    text-align: center;
+    align-items: center;
+  }
+  #container{
+    width: 97%;
+    margin: auto;
+    margin-top: 2%;
+    padding: 20px;
+    display: flex;
+    gap: 1%;
+    justify-content: space-evenly;
+  }
+  #sub1{
+    width: 15%;
+  }
+  #sub1 h3{
+    background-color:#e40046;
+    padding: 5px;
+    color: white;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 5px;
+  }
+  thead{
+    background-color: #e40046;
+    position: sticky;
+    top: 0px;
+  }
+  th{
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+  }
+  #usersub{
+    width: 83%;
+  }
+  table{
+    width: 100%;
+  }
+  td{
+    width: 20%;
+    text-align: center;
+    background-color: gainsboro;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  #usertable{
+    height: 500px;
+    overflow-y: scroll;
+    display: none;
+  }
+  #producttable{
+    height: 500px;
+    overflow-y: scroll;
+    display: none;
+ }
+ #producttable td img{
+    width: 150px;
+ }
+ #soldtable{
+    height: 500px;
+    overflow-y: scroll;
+    display: none;
+ }
+ #soldtable td img{
+    width: 150px;
+ }
+ #revenue{
+    display: none;
+ }
+ #editUser{
+    display: none;
+ }
+ .userDetails{
+    padding: 20px;
+ }
+ .userDetails input{
+    padding: 10px;
+    border: none;
+    height: fit-content;
+    text-align: justify;
+    font-size:large;
+ }
+ .userDetails label{
+    font-size: large;
+ }
+input :focus {
+    outline: none;
+  }
+  button{
+        background-color: #e40046;
+        font-size: 16px;
+        padding: 6px 30px 8px 30px;
+        cursor: pointer;
+        color: white;
+        border: none;
+        border-radius: 5px;
+  }
+  

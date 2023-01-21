@@ -17,7 +17,7 @@ document.querySelector("#proceed").addEventListener("click",()=>{
         }).then(res=>res.json())
         .then(data=>{alert("address added succesfully")
             sessionStorage.setItem("address",JSON.stringify({pincode,city,street,houseno}))
-            window.location = "checkout.html"
+            history.back()
         })
         .catch(err=>alert("Please try again"))
     }

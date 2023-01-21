@@ -82,9 +82,11 @@
                 "Content-type":"application/json"
             }
         }).then(res=>res.json())
-        .then(data=>alert("Account Created SuccessFull, Please login"))
+        .then(data=>{alert("Account Created SuccessFull, Please login")
+        window.location = "signin.html"
+      })
         .catch(err=>alert("something went"))
-          window.location = "signin.html"
+         
         } 
         else {
           alert("Wrong OTP");

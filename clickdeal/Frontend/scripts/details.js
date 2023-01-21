@@ -124,6 +124,7 @@ function display(data){
             
         })
     }
+    
     let productId = selectedProduct
     let userId = sessionStorage.getItem("userId")
     document.querySelector(".selected").src=  images[0]
@@ -153,10 +154,19 @@ function display(data){
             alert("product aleady in the cart")
            }
         }).catch(err=>alert("please login"))
-
-        
-    
     })
+    document.querySelector("#buy").addEventListener("click",()=>{
+        fetch(`https://prussian-blue-butterfly-wig.cyclic.app/user/?_id=${sessionStorage.getItem("userId")}`,{
+            headers:{
+                "Authorization":token
+            }
+            }).then(res=>res.json())
+            .then(data=>{check(data)
+            
+        })
+            .catch(err=>alert("please login"))
+        })
+            
 }
 
 document.querySelector(".logoimg").addEventListener("click",()=>{
@@ -170,3 +180,13 @@ for(let cat of all){
         window.location = "product.html"
     })
 }
+function check(data){
+    if(data[0].address){
+       sessionStorage.setItem("address",JSON.stringify(data[0].address))
+       window.location = "buynow.html"
+    }
+    else{
+        window.location="address.html"
+    }
+}
+        
