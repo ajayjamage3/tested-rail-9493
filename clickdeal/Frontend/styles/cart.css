@@ -79,3 +79,6 @@
   #pay:hover{
     background-color: #b30036;
   }
+  button{
+    cursor: pointer;
+}

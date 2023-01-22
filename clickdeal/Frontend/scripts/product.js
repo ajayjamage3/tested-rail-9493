@@ -136,3 +136,13 @@ document.querySelector("#orders").addEventListener("click",()=>{
         alert("please login")
     }
 })
+
+document.querySelector("#srhbtn").addEventListener("click",()=>{
+   let searchValue =  document.querySelector("#search").value
+   console.log(searchValue)
+   fetch(`https://prussian-blue-butterfly-wig.cyclic.app/render/search/?search=${searchValue}`)
+   .then(res=>res.json())
+   .then(data=>{
+       display(data)
+   })
+})

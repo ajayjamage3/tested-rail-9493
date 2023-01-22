@@ -53,5 +53,5 @@ document.querySelector("#button").addEventListener("click",()=>{
             window.location = "index.html"
         }
     }})
-    .catch(err=>alert("Wrong username or password"))
+    .catch(err=>alert(err))
 })
