@@ -65,7 +65,6 @@ body {
   }
   #pro_details{
     width: 80%;
-    margin: auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 4px;
@@ -74,6 +73,7 @@ body {
     padding: 10px;
     background-color: white;
     text-align: center;
+    height: fit-content;
   }
   .product img{
     height: 200px;
@@ -93,3 +93,6 @@ body {
     margin-top: 5%;
   }
   
+  button{
+    cursor: pointer;
+}

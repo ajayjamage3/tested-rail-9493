@@ -75,3 +75,15 @@ i{
     display: none;
     margin-top: 5%;
   }
+  button{
+    background-color: #e40046;
+    font-size: 16px;
+    padding: 6px 30px 8px 30px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#order,#address{
+    cursor: pointer;
+}

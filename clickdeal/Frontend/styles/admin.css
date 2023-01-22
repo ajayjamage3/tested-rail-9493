@@ -106,6 +106,7 @@
     height: fit-content;
     text-align: justify;
     font-size:large;
+    width: 50%;
  }
  .userDetails label{
     font-size: large;
@@ -122,4 +123,54 @@ input :focus {
         border: none;
         border-radius: 5px;
   }
-  
+  #usermoredet{
+    display: none;
+  }
+  .producinfo{
+    padding: 10px;
+    text-align: center;
+  }
+  .producinfo img{
+    width: 200px;
+  }
+  #usermore1{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+  }
+  #fillproducts{
+    display: none;
+  }
+  #productForm input{
+    padding: 10px;
+    border-radius: 5px;
+  }
+  #productForm{
+    padding: 20px;
+  }
+  textarea{
+    padding: 10px;
+    border-radius: 5px;
+  }
+  #productDetails{
+    display: none;
+  }
+  .activity{
+    text-align: justify;
+    padding: 10px;
+  }
+  #usermore2{
+    display: none;
+    height: 400px;
+    overflow-y: scroll;
+  }
+  #bought img{
+    width: 150px;
+  }
+
+h3{
+  cursor: pointer;
+}
+td{
+  cursor: pointer;
+}
