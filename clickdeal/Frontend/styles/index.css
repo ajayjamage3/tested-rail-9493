@@ -518,6 +518,9 @@ header{
   height: 500px;
   background: whitesmoke;
 }
+#nav3,#nav4{
+  display: none;
+}
 #list5:hover .sublists {
   position: absolute;
   display: block;

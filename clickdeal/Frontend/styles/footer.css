@@ -203,3 +203,33 @@
   button{
     cursor: pointer;
 }
+
+@media (max-width: 1080px) {
+  
+  .secure{
+    display: none;
+    
+  }
+  .footer1{
+    display: none;
+  }
+  .footer1{
+    display: none;
+  }
+  
+ }
+ 
+ @media (max-width: 450px) {
+  
+  .secure{
+    display: none;
+    
+  }
+  .footer1{
+    display: none;
+  }
+  .footer1{
+    display: none;
+  }
+
+ }

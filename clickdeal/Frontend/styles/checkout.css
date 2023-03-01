@@ -233,3 +233,30 @@
  button{
   cursor: pointer;
 }
+
+
+@media (max-width: 1080px) {
+  
+ 
+ }
+ 
+ @media (max-width: 450px) {
+  #sec2{
+    display: none;
+  }
+  #sec1{
+    width: 200%;
+  }
+  body{
+    width: 200%;
+  }
+  #container{
+    width: 90%;
+  }
+  #bill{
+    width: fit-content;
+  }
+  #bill div{
+    width: 40%;
+  }
+ }

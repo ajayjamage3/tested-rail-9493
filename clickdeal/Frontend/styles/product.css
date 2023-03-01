@@ -96,3 +96,33 @@ body {
   button{
     cursor: pointer;
 }
+
+@media (max-width: 1080px) {
+  #pro_details{
+    grid-template-columns: repeat(2,1fr);
+  }
+  #sort{
+    width: fit-content;
+  }
+  
+ }
+ 
+ @media (max-width: 450px) {
+  #pro_page{
+    display: flex;
+    width: 140%;
+    justify-content: space-evenly;
+    margin-left: 40px;
+  }
+
+  #pro_page img{
+    width: 200px;
+  }
+  #pro_details{
+    grid-template-columns: repeat(1,1fr);
+  }
+  #sort{
+    padding:70px;
+  }
+
+ }
