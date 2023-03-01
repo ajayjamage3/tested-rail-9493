@@ -82,3 +82,31 @@
   button{
     cursor: pointer;
 }
+
+@media (max-width: 1080px) {
+  
+  #pay{
+    width: fit-content;
+  }
+  #cart_body{
+    width:100%;
+    margin: auto;
+  }
+  #bill{
+   width: 115%;
+  }
+ }
+ 
+ @media (max-width: 450px) {
+  #pay{
+    width: fit-content;
+  }
+  #cart_body{
+    width:100%;
+    margin: auto;
+  }
+  #bill{
+    width: 200%;
+  }
+
+ }
