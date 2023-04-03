@@ -69,3 +69,6 @@ form > input {
     width: 70%;
     margin: auto;
   }
+  button{
+    cursor: pointer;
+}

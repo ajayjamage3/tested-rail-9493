@@ -265,6 +265,7 @@
     margin-left: 24px;
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
   .logoimg h3{
     color: white;
@@ -438,6 +439,7 @@ header{
   margin-bottom: 12px;
   position: relative;
   height: 36px;
+  cursor: pointer;
 }
 .leftside li:hover {
   border-left: 3px solid red;
@@ -515,6 +517,9 @@ header{
   width: 420%;
   height: 500px;
   background: whitesmoke;
+}
+#nav3,#nav4{
+  display: none;
 }
 #list5:hover .sublists {
   position: absolute;
@@ -610,6 +615,7 @@ header{
 .product{
   padding: 20px;
   text-align: center;
+  cursor: pointer;
 }
 .product:hover{
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -623,4 +629,7 @@ header{
   cursor: pointer;
   display: none;
   margin-top: 5%;
+}
+button{
+  cursor: pointer;
 }

@@ -80,4 +80,57 @@
     padding: 10px 15px 10px 15px;
     border-radius: 5px;
   }
+  button{
+    cursor: pointer;
+}
+
+
+@media (max-width: 1080px) {
  
+  #pro_body{
+    
+    width: 100%;
+  }
+    #pro_img{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #big_img{
+      width: 200px;
+    }
+    #small_img{
+      width: 20px;
+    }
+  
+    #pro_det{
+      width: fit-content;
+    }
+  
+ }
+ 
+ @media (max-width: 450px) {
+#pro_body{
+  display: flex;
+  flex-direction: column;
+  width: 200%;
+}
+  #pro_img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+  }
+  #big_img{
+    width: 200px;
+  }
+  #small_img{
+    display: flex;
+    width: 20px;
+  }
+
+  #pro_det{
+    width:fit-content;
+  }
+
+ }

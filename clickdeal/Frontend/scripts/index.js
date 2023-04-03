@@ -85,8 +85,31 @@ document.querySelector("#logout").addEventListener("click",()=>{
     sessionStorage.clear()
     document.querySelector("#login").style.display = "block"
     document.querySelector("#logout").style.display = "none"
-    window.location.reload()
+    window.location="index.html"
 })
 document.querySelector(".logoimg").addEventListener("click",()=>{
     window.location = "index.html"
+})
+let all = document.querySelectorAll("p")
+for(let cat of all){
+    cat.addEventListener("click",()=>{
+        sessionStorage.setItem("category",cat.innerText)
+        window.location = "product.html"
+    })
+}
+document.querySelector("#account").addEventListener("click",()=>{
+    if(token){
+        window.location = "userinfo.html"
+    }
+    else{
+        alert("please login")
+    }
+})
+document.querySelector("#orders").addEventListener("click",()=>{
+    if(token){
+        window.location = "userinfo.html"
+    }
+    else{
+        alert("please login")
+    }
 })

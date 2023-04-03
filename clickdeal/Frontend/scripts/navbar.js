@@ -13,49 +13,55 @@ export const navbar =()=>{
 </nav>
 
 <nav class="mainnav">
-    <div class="logoimg">
-    <img src="./scripts/clickdeal.png" alt="">
-    <h3>clickdeal</h3>
-    </div>
-    <div class = "menubar">
-    <div class = "menu">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
-    </div>
-    <div class="leftside"></div>
-    </div>
-    <div class="search">
+<div class="logoimg">
+<img src="./scripts/clickdeal.png" alt="">
+<h3>clickdeal</h3>
+</div>
+<div class = "menubar">
+<div class = "menu">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+</div>
+<div class="leftside"></div>
+</div>
+<div class="search">
     <input type="text" placeholder="Search products & brands" id="search"/>
     <button class="btn" id="srhbtn"><i class="fas fa-search"></i> Search</button>
+</div>
+
+
+<div class="moreitemslist">
+    <div class="moreitems1">
+        <a href="cart.html">Cart <i class="fas fa-shopping-cart"></i></a>
     </div>
-    <div class="moreitemslist">
-        <div class="moreitems1">
-            <a href="cart.html">Cart <i class="fas fa-shopping-cart"></i></a>
-        </div>
-        <div class="moreitems2">
-            <a href="" id="user_name">Sign In <i class="fas fa-user-circle"></i></a>
+    <div class="moreitems2">
+        <a href="" id="user_name">Sign In <i class="fas fa-user-circle"></i></a>
 
-            <div class="signsub">
-                <ul>
-                    <li><i class="far fa-user" id="account"></i>Your Account</li>
-                    <li><i class="fas fa-box-open" id="orders"></i>Your Orders</li>
-                    <li><i class="far fa-heart"></i>Shortlist</li>
-                    <li><i class="fas fa-hand-holding-usd"></i>SD Cash</li>
-                </ul>
+        <div class="signsub">
+            <ul>
+                <li><i class="far fa-user" id="account"></i>Your Account</li>
+                <li><i class="fas fa-box-open" id="orders"></i>Your Orders</li>
+                <li><i class="far fa-heart"></i>Shortlist</li>
+                <li><i class="fas fa-hand-holding-usd"></i>SD Cash</li>
+            </ul>
 
-                <hr />
+            <hr />
 
-                <p>If you are a new user</p>
+            <p>If you are a new user</p>
 
-                <a href="signup.html">
-                    <h3>Register</h3>
-                </a>
-                <a href="signin.html" id="login">Login</a>
-                <a  id="logout">Logout</a>
-            </div>
+            <a href="signup.html">
+                <h3>Register</h3>
+            </a>
+            <a href="signin.html" id="login">Login</a>
+            <a  id="logout">Logout</a>
         </div>
     </div>
+</div>
+<div  id="search1">
+    <input type="text" placeholder="Search products & brands" id="search"/>
+    <button class="btn" id="srhbtn"><i class="fas fa-search"></i> Search</button>
+</div>
 </nav>`
 }
 
@@ -78,16 +84,16 @@ export const dropmenu =()=>{
               <h4>AUTUMN/WINTER SPECIAL</h4>
               <p>Air Purifiers Geysers Socks</p>
               <p>Geysers</p>
-              <p>Socks</p>
+              <p>Bronzer</p>
               <p>Air Fresheners</p>
               <p>Blankets & Comforters</p>
               <p>Coffee & Tea Makers</p>
-              <p>Hair Dryers</p>
+              <p>lipstic</p>
               <p>Air Conditioners</p>
               <hr />
               <h4>AUTUMN/WINTER SPECIAL</h4>
               <p>Air Purifiers Geysers Socks</p>
-              <p>Geysers</p>
+              <p>Blush</p>
               <p>Socks</p>
               <p>Air Fresheners</p>
             </div>
@@ -95,17 +101,17 @@ export const dropmenu =()=>{
             <div>
               <h4>AUTUMN/WINTER SPECIAL</h4>
               <p>Air Purifiers Geysers Socks</p>
-              <p>Geysers</p>
+              <p>fashion</p>
               <p>Socks</p>
               <hr />
               <h4>AUTUMN/WINTER SPECIAL</h4>
               <p>Air Purifiers Geysers Socks</p>
-              <p>Geysers</p>
+              <p>powerbank</p>
               <p>Socks</p>
               <p>Air Fresheners</p>
               <p>Blankets & Comforters</p>
-              <p>Coffee & Tea Makers</p>
-              <p>Hair Dryers</p>
+              <p>Mens Cloths</p>
+              <p>Womens Cloths</p>
             </div>
             <!-- 3rd row -->
             <div>

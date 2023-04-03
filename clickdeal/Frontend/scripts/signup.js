@@ -6,8 +6,16 @@ document.querySelector("#button").addEventListener("click",()=>{
     let password = document.querySelector("#password").value
     let age = document.querySelector("#age").value
     if(name != "" && email!= "" && phone!= "" && gender!= "" && age!= "" && password !=""){
-        sessionStorage.setItem("userInfo",JSON.stringify({name,email,phone,gender,age,password}))
-        window.location = "otp.html"
+        fetch(`https://prussian-blue-butterfly-wig.cyclic.app/user?email=${email}`)
+        .then(res=>res.json())
+        .then(data=>{if(data.length>0){
+            alert("You already have account please signin")
+            window.location = "signin.html"
+        }else{
+            sessionStorage.setItem("userInfo",JSON.stringify({name,email,phone,gender,age,password}))
+            window.location = "otp.html"
+        }})
+        .catch(err=>alert("something went"))
     }
     else{
         alert("Please fill complete form")

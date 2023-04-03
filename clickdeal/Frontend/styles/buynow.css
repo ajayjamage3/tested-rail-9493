@@ -1,0 +1,235 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: whitesmoke;
+  }
+  
+  #payment-protection {
+    background-color: #e40046;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 100px;
+  }
+  .logoimg{
+    margin-top: 15px;
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .logoimg h3{
+    color: white;
+  }
+  .logoimg img{
+   width: 40px;
+  }
+  #payment-protection  p {
+    padding-top: 24px;
+    color: white;
+    text-align: center;
+    align-items: center;
+  }
+  #container{
+    width: 85%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: -1%;
+    padding: 20px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+  }
+  #sec1{
+    width: 80%;
+  }
+  #sec2{
+    width: 25%;
+    padding: 20px;
+    background-color: rgb(249,250,251);
+    border-radius: 5px;
+  }
+  .fa{
+    color: green;
+    font-size: 30px;
+  }
+  #login{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: rgb(249,250,251);
+    gap: 10%;
+    padding-left: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
+  #logs{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+  }
+  #address{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: rgb(249,250,251);
+    gap: 10%;
+    padding-left: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin-top: 2%;
+  }
+  #address2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+  }
+  #useradd{
+    width: 20%;
+    text-align: justify;
+  }
+  #rev{
+    display: flex;
+    align-items: center;
+    background-color: rgb(51,51,51);
+    padding-left: 20px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin-top: 2%;
+    
+  }
+  #makepay{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: rgb(249,250,251);
+    gap: 10%;
+    padding-left: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin-top: 2%;
+  }
+  
+  #cart_body{
+    width: 100%;
+    margin: auto;
+    height: 250px;
+    overflow-y: scroll;
+  }
+
+  table{
+    width: 100%;
+    background-color: white;
+    margin-bottom: 8%;
+  }
+  thead{
+    text-align: center;
+    position: sticky;
+    top: 0vh;
+  }
+  th{
+    padding: 20px;
+    background-color:rgb(247,247,247);
+  }
+  td{
+    text-align: center;
+    background-color: white;
+    border-bottom: 1px solid gray;
+  }
+  .carts img{
+    width: 80px;
+  }
+  .quantity{
+    padding: 10px;
+    border-radius: 4px;
+  }
+  #title{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .photo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .remove{
+    color: gray;
+  }
+  #bill{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3%;
+    background-color: rgb(34,34,34);
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  #subtotal{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 100px;
+    row-gap: 15px;
+    color: white;
+  }
+  #green{
+    color: green;
+  }
+  #pay{
+    background-color:rgb(228,0,70);
+    color: white;
+    padding: 10%;
+    width: 120%;
+    border: none;
+    border-radius: 10px;
+  }
+  #pay:hover{
+    background-color: #b30036;
+  }
+  #methodDiv{
+    display: flex;
+    justify-content: flex-start;
+    gap: 3%;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+  }
+  #method{
+    border-right: 1px solid gray;
+    width: 20%;
+  }
+  input{
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+    border: 1px solid gray;
+  }
+  #details{
+    width: 90%;
+    margin: auto;
+  }
+ #method p{
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    padding-top: 10px;
+ }
+ #paybutton{
+    background-color:rgb(228,0,70);
+    color: white;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    border-radius: 4px;
+ }
+ #method p:hover{
+    background-color: rgb(247,247,247);
+ }
+ button{
+  cursor: pointer;
+}
