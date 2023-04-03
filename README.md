@@ -140,6 +140,6 @@ Payment page:
 ## Author
 
 - [@ajayjamage3](https://github.com/ajayjamage3)
-=======
+
 <p>Clickdeal CLone of Snapdeal<p>
 
