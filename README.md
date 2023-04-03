@@ -1,4 +1,5 @@
 # tested-rail-9493
+
 Clickdeal is an e-commerce website where users can buy a variety of products
 
 ## Features
@@ -139,3 +140,6 @@ Payment page:
 ## Author
 
 - [@ajayjamage3](https://github.com/ajayjamage3)
+=======
+<p>Clickdeal CLone of Snapdeal<p>
+
